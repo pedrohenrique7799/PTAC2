@@ -1,17 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-export function App() {
-  return (
-    <div>
-      <h1>Hello Word!</h1>
-    </div>
-
-  );
-}
+import {Routes, Route, BrowserRouter} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/home' element={<Home/>}></Route>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )
