@@ -5,6 +5,10 @@ import  './index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/home' element={<Home/>}></Route>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )
